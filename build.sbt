@@ -22,3 +22,4 @@ lazy val common = project.settings(commonSettings)
 
 lazy val messaging = project.dependsOn(common % "test->test;compile->compile")
 lazy val elasticity = project.dependsOn(common % "test->test;compile->compile")
+lazy val faulty = project.dependsOn(common % "test->test;compile->compile")
