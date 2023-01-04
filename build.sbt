@@ -24,3 +24,12 @@ lazy val messaging = project.dependsOn(common % "test->test;compile->compile")
 lazy val elasticity = project.dependsOn(common % "test->test;compile->compile")
 lazy val faulty = project.dependsOn(common % "test->test;compile->compile")
 lazy val resilience = project.dependsOn(common % "test->test;compile->compile")
+lazy val catalog = project.dependsOn(common % "test->test;compile->compile")
+lazy val customer = project.dependsOn(
+  common % "test->test;compile->compile",
+  catalog % "compile->compile"
+)
+lazy val rarebooks = project.dependsOn(
+  common % "test->test;compile->compile",
+  catalog % "compile->compile"
+)
