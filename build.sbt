@@ -34,3 +34,4 @@ lazy val rarebooks = project.dependsOn(
   catalog % "compile->compile"
 )
 lazy val echo = project
+lazy val atleastonce = project
